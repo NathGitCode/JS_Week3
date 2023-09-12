@@ -1,0 +1,30 @@
+body {
+  background-color: grey;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.three {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+button {
+  padding: 50px;
+  margin: 50px;
+  font-size: 25px;
+  background-color: rgb(18, 230, 230);
+  border: none;
+  border-radius: 30px;
+}
+
+button:hover {
+  background-color: white;
+}
+
+/* button: */
