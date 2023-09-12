@@ -26,6 +26,14 @@ const button9 = document.getElementById(`button9`);
 const tom = document.getElementById(`tom`);
 
 document.addEventListener(`keydown`, (event) => {
+  const keyCodeData = document.querySelector(
+    `button[data-keycode="${event.keyCode}"]`
+  );
+  console.log(keyCodeData);
+  keyCodeData.style.backgroundColor = "white";
+  setTimeout(() => {
+    keyCodeData.style.backgroundColor = "rgb(18, 230, 230)";
+  }, 200);
   if (event.keyCode == 65) {
     boom.play();
   } else if (event.keyCode == 87) {
@@ -82,3 +90,6 @@ button8.addEventListener(`click`, () => {
 button9.addEventListener(`click`, () => {
   button9 = tom.play();
 });
+
+// look at keypress instead of keydown
+// look at grouping buttons
