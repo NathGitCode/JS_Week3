@@ -15,27 +15,27 @@ button1.addEventListener(`click`, () => {
   if (valueRolled.innerHTML == 1) {
     totalScore = 0;
     valueRolled.innerHTML = " 1, start again!";
-    diceImage.src = `dice1.png`;
+    diceImage.src = `images/dice1.png`;
   } else if (valueRolled.innerHTML == 2) {
     totalScore += randomNumber;
     total.innerHTML = totalScore;
-    diceImage.src = `dice2.png`;
+    diceImage.src = `images/dice2.png`;
   } else if (valueRolled.innerHTML == 3) {
     totalScore += randomNumber;
     total.innerHTML = totalScore;
-    diceImage.src = `dice3.png`;
+    diceImage.src = `images/dice3.png`;
   } else if (valueRolled.innerHTML == 4) {
     totalScore += randomNumber;
     total.innerHTML = totalScore;
-    diceImage.src = `dice4.png`;
+    diceImage.src = `images/dice4.png`;
   } else if (valueRolled.innerHTML == 5) {
     totalScore += randomNumber;
     total.innerHTML = totalScore;
-    diceImage.src = `dice5.png`;
+    diceImage.src = `images/dice5.png`;
   } else if (valueRolled.innerHTML == 6) {
     totalScore += randomNumber;
     total.innerHTML = totalScore;
-    diceImage.src = `dice6.png`;
+    diceImage.src = `images/dice6.png`;
   }
 });
 
