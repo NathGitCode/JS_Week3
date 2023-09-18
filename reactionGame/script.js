@@ -1,10 +1,6 @@
-const mainText = document.getElementById(`mainText`);
-const subText = document.getElementById(`subText`);
-const body = document.getElementById(`background`);
-
-let subTexts = subText;
-let background = body;
-let mainTexts = mainText;
+const mainTexts = document.getElementById(`mainText`);
+const subTexts = document.getElementById(`subText`);
+const background = document.getElementById(`background`);
 
 let randomNumber = 500 + Math.floor(Math.random() * 3000);
 let reactionTime = 0;
@@ -23,7 +19,7 @@ let fun1 = () => {
 let fun2 = () => {
   background.style.backgroundColor = "orange";
   playingGame = false;
-  mainTexts.innerHTML = Date.now() - reactionTime;
+  mainTexts.innerHTML = Date.now() - reactionTime + " ms";
 };
 
 document.addEventListener(`click`, () => {
